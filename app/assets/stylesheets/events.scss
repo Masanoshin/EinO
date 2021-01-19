@@ -1,0 +1,295 @@
+// Place all the styles related to the events controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.event-img img{
+    height: 200px;
+    width: 200px;
+}
+
+
+// event-eventのCSS
+.event-test{
+    
+}
+.event{
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+.event-co{
+    height: 100%;
+    padding: 30px 70px;
+    width: 70%;
+    margin: 0 auto;
+}
+.event-one{
+    width: 10%;
+}
+.fadein{
+    opacity: 0;
+	transform : translate(-200px, 0px);
+	transition : all 1s;
+}
+.scrollin {
+	opacity : 1;
+	transform : translate(0, 0);
+}
+.fadein:first-child{
+    opacity: 1;
+    transform : translate(0, 0);
+}
+
+.posted{
+    border-top: solid 0.5px rgb(191, 189, 189);
+    width: 90%;
+    margin: 50px auto;
+    ul{
+        li{
+            line-height: 20px;
+        }
+    }
+    
+}
+.posted-img{
+    padding: 5px;
+    img{
+        text-align: center;
+        width: 100%;
+        height: 200px;
+
+    }
+}
+.posted-title{
+    font-weight: bold;
+    padding: 10px 10px;
+    font-size: 1.4em;
+}
+.posted-date{
+    text-align: right;
+    color: red;
+    font-size: 0.8em;
+}
+.posted-content{
+    padding: 10px;
+    font-size: 1em;
+}
+.posted-link{
+    a{
+    color: black;
+    float: right;
+    text-decoration: none;
+    }
+    :hover{
+        opacity: 0.5;
+        padding-top: 3px;
+    }
+}
+.posted-joined{
+    color: black;
+    font-weight: bold;
+    padding: 20px 10px;
+}
+.posted-join{
+    a{
+        color: red;
+        padding-left: 10px;
+
+    }
+    
+}
+.pagination{
+    text-align: center;
+    margin: 10px 0px;
+    span{
+
+    }
+}
+.current{
+    background-color: rgb(150, 148, 148);
+    box-shadow: 1px 1px 2px black;
+    color: white;
+    padding: 5px 0px 5px 5px;
+    margin-right: 7px;
+}
+.page{
+    a{
+        color: black;
+        background-color: none;
+    }
+}
+.first{
+    a{
+        color: black;
+    }
+}
+.prev{
+    a{
+        color: black;
+    }
+}
+.next{
+    a{
+        color: black;
+    }
+}
+.last{
+    a{
+        color: black;
+    }
+}
+
+// event-detalのCSS
+.detal-all{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+
+}
+
+.detal{
+    width: 37%;
+}
+.detal-not{
+    width: 70%;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.detal-coment-result{
+    overflow: scroll;
+    width: 70%;
+    height: 350px;
+    margin: 20px 45px 0 0;
+    border: 1px solid rgb(235, 235, 235);
+}
+.coment{
+    ul{
+        display: flex;
+        align-items: center;
+        padding-top: 15px;
+        margin-bottom: -5px;
+    }
+}
+
+.d-c-name{
+    font-size: 0.75em;
+    display: inline-block;
+}
+.d-c-come{
+    font-size: 1.2em;
+    line-height: 23px;
+    display: block;
+    padding-left: 30px;
+}
+.d-c-img{
+    display: inline-block;
+    margin-right: 6.4px;
+    img{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+    }
+}
+.d-c-time{
+    display: inline-block;
+    font-size: 0.75em;
+    padding-right: 5px;
+    color: red;
+    
+}
+.mycoment{
+    ul{
+        display: block;
+        padding-top: 15px;
+        margin-bottom: -5px;
+    }
+}
+.d-c-myname{
+    font-size: 0.75em;
+    float: right;
+    padding: 0px 4px;
+}
+.d-c-mycome{
+    font-size: 1.2em;
+    line-height: 23px;
+    text-align: right;
+    padding-top: 10px;
+}
+.d-c-myimg{
+    float: right;
+    margin-right: 6.4px;
+    img{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        margin-top: -8px;
+    }
+}
+.d-c-mytime{
+    text-align: right;
+    font-size: 0.75em;
+    color: red;
+    
+}
+
+.detal-posted{
+    margin: 0 0 50px 0; 
+    width: 150%;
+    display: fixed;
+    border: 1px solid rgb(235, 235, 235);
+    box-shadow: 1px 1px 5px rgb(223, 221, 221);
+    img{
+        width: 100%;
+        height: 200px;
+    }
+}
+
+
+.detal-title{
+    font-size: 2em;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: 550;
+}
+.detal-num{
+    padding-left: 10px;
+    display: inline-block;
+    
+}
+.detal-date{
+    font-size: 1em;
+    color: red;
+    text-align: right;
+    padding: 10px 0;
+}
+.detal-joined{
+    display: inline;
+}
+.detal-join{
+    display: inline;
+    a{
+        text-decoration: none;
+        color: red;
+        padding-left: 10px;
+    }
+}
+.detal-content{
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 28px;
+    padding: 0 10px;
+    word-wrap: break-word;
+}
+
+
+
+
+
+
+

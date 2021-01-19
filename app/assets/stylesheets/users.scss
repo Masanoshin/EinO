@@ -1,0 +1,209 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+/*
+html5doctor.com Reset Stylesheet
+v1.4
+2009-07-27
+Author: Richard Clark - http://richclarkdesign.com
+*/
+
+
+
+
+
+.singup{
+    background-image: url("../assets/back23.png");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 650px;
+    text-align: center;
+    h1{
+        font-size: 2em;
+        padding-top: 3.6em;
+        padding-bottom: 1em;
+    }
+}
+.singup-form{
+    width: 60%;
+    margin: 0 auto;
+}
+#error_explanation{
+    padding-top: -20px;
+    ul{
+        li{
+            font-size: 1em;
+    
+        }
+    }
+}
+.alert{
+}
+.field_with_errors{
+    display: inline-block;
+}
+.form{
+    width: 50%;
+    margin: 0 auto;
+    p{
+        padding-top: 20px;
+    }
+}
+.new_user{
+    text-align: left;
+}
+#user_name{
+    margin-left: 57px;
+}
+#user_email{
+    margin-left: 61px;
+}
+#user_password{
+    margin-left: 26px;
+}
+
+
+// mypage
+.mypageAll{
+    display: flex;
+}
+.profile{
+    display: inline-block;
+    width: 40%;
+}
+.p-in{
+    position: fixed;
+    text-align: center;
+    width: 29%;
+    padding: 60px 0px 20px 0px;
+    img{
+        width: 13em;
+        height: 13em;
+        border-radius: 50%;
+        border: solid 2px black;
+    }
+}
+.user-name{
+    padding: 20px 0 0 0px;
+    text-align: center;
+    
+    font-size: 25px;
+    font-weight: bold;
+}
+.user-intro{
+    padding: 20px 0 0 0px;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: bold;
+}
+.p-user-edit{
+    a{
+        color: black;
+        padding: 10px 0px 0px 0px;
+        
+        display: inline-block;
+    }
+}
+
+.joined-all{
+    display: inline-block;
+    width: 40%;
+}
+.joined-img{
+    padding: 5px;
+    img{
+        text-align: center;
+        width: 100%;
+        height: 200px;
+
+    }
+}
+.joined-all{
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+.jo{
+    border-top: solid 2px black;
+    margin-bottom: 20px;
+}
+.joined-title{
+    font-weight: bold;
+    padding: 10px 10px;
+    font-size: 1.4em;
+}
+.joined-date{
+    text-align: right;
+    color: red;
+    font-size: 0.8em;
+}
+.joined-content{
+    padding: 10px;
+    font-size: 1em;
+}
+.joined-link{
+    a{
+    color: black;
+    float: right;
+    text-decoration: none;
+    }
+    :hover{
+        opacity: 0.5;
+        padding-top: 3px;
+    }
+}
+.Notjoin{
+    height: 400px;
+    margin-left: -75px;
+    p{
+        padding: 100px 0px 60px 0px;
+        font-size: 2em;
+    }
+    a{
+        color: blue;
+        font-size: 1.2em;
+        &:hover{
+            color: black;
+            padding-top: 2px;
+            display: inline-block;
+        }
+
+    }
+}
+.joined-not{
+    a{
+        color: blue;
+        padding-left: 10px;
+    }
+}
+
+// edit
+.user-edit{
+    background-image: url("../assets/back23.png");
+    background-size: 100% 100%;
+    height: 550px;
+    width: 100%;
+}
+.edit-form{
+    font-size: 2em;
+    display: grid;
+    place-items: center;
+    padding: 140px 0 40px 0;
+    h1{
+        padding: 10px 0px;
+    }
+}
+// #user_img{
+//     padding-left: 20px;
+// }
+#user_email{
+    margin-left: 64px; 
+}
+.u-e{
+    p{
+        padding: 20px 0;
+    }
+}
+.u-e-s{
+    margin-top: 20px;
+}
