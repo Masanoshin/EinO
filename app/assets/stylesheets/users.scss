@@ -109,6 +109,8 @@ Author: Richard Clark - http://richclarkdesign.com
 .joined-all{
     display: inline-block;
     width: 40%;
+    margin-top: 30px;
+    padding-bottom: 20px;
 }
 .joined-img{
     padding: 5px;
@@ -119,10 +121,7 @@ Author: Richard Clark - http://richclarkdesign.com
 
     }
 }
-.joined-all{
-    margin-top: 30px;
-    padding-bottom: 20px;
-}
+
 .jo{
     border-top: solid 2px black;
     margin-bottom: 20px;
@@ -206,4 +205,23 @@ Author: Richard Clark - http://richclarkdesign.com
 }
 .u-e-s{
     margin-top: 20px;
+}
+
+// ---------レスポンシブ------------
+@media screen and (max-width: 430px){
+    .mypageAll{
+        display: unset;
+    }
+    .profile{
+        width: 100%;
+    }
+    .p-in{
+        position: unset;
+        width: 100%;
+    }
+    .joined-all{
+        width: 94%;
+        margin: 10px;
+    }
+
 }
