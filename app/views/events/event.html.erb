@@ -1,31 +1,13 @@
 <%if @user %>
 
-<%# <div class="event">
-<div class="event-one event-co">
-<h1>content</h1>
-<h1>content</h1>
-<h1>content</h1>
-<h1>content</h1>
-<h1>content</h1>
-<h1>content</h1>
-<h1>content</h1>
-<h1>content</h1>
-<h1>content</h1>
-<h1>content</h1>
-<h1>content</h1>
-<h1>cot</h1>
-
-</div> %>
-<%# kaminari 使い方検索 ページねいとの仕方 %>
-
 <div class="event-co">
  <% @posts.each do |post| %>
  <div class="posted fadein">
   <ul>
-     <% if post.img? %>
-       <li class="posted-img"><%= image_tag post.img.url %></li>
-     <% else %>
-       <li class="posted-img"><%= image_tag("will.png") %></li>
+    <% if post.img? %>
+      <li class="posted-img"><%= image_tag post.img.url %></li>
+    <% else %>
+      <li class="posted-img"><%= image_tag("will.png") %></li>
     <% end %>
      <li class="posted-title"><%= post.title %></li>
      <li class="posted-date">開催日:<%= post.date %></li>

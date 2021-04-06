@@ -308,33 +308,43 @@
 
 // ーーーーーーーーーレスポンシブ----------------
 @media screen and (max-width: 430px) {
-    .home-1{
-        h1{
-            font-size: 3em;
-        }
+
+// --------------------ヘッダー--------------
+  .header-top img{
+    height: 35px;
+    width:  35px;
+
+  }
+    
+  .home-1{
+    h1{
+      font-size: 3em;
     }
-    .home-2-text{
-        padding: 0px;
-        width: 100%;
-        h1{
-            font-size: 1.5em;
-            text-align: center;
-            width: unset;
-            padding: 50px 0px;
-        }
-        h1::before{
-            display: none;
-        }
+  }
+
+  .home-2-text{
+    padding: 0px;
+    width: 100%;
+      h1{
+        font-size: 1.5em;
+        text-align: center;
+        width: unset;
+        padding: 50px 0px;
+      }
+
+  h1::before{
+    display: none;
+  }
         
-        p{
-            padding: 10px 5px;
-            font-size: 1.5em;
-            p:first-child{
-                padding-top: 100px;
-                color: red;
-            }
-        }
-    }
+  p{
+    padding: 10px 5px;
+    font-size: 1.5em;
+      p:first-child{
+        padding-top: 100px;
+        color: red;
+      }
+  }
+}
     
     .home-2-img{
 
