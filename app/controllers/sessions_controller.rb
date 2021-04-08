@@ -18,6 +18,6 @@ class SessionsController < ApplicationController
         session.delete(:user_id)
         @current_user = nil
         flash[:notice] = "ログアウトしました"
-        redirect_to("/home")
+        redirect_to("/")
     end
 end
