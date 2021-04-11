@@ -8,7 +8,7 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+
 # gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
@@ -42,8 +42,9 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-rails'
-gem 'pry-byebug'
-gem 'pry-doc'
+  gem 'sqlite3', '~> 1.4'
+  gem 'pry-byebug'
+  gem 'pry-doc'
 end
 
 group :development do
