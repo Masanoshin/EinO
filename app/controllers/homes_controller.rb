@@ -6,4 +6,8 @@ class HomesController < ApplicationController
     def about
         
     end
+
+    def condition
+        
+    end
 end

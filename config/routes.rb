@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   get "/", to: "homes#home"
   get "about", to: "homes#about"
+  get "condition", to: "homes#condition"
 
   get "event", to: "events#event"
   get "detal/:id", to: "events#detal"
