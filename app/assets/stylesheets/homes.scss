@@ -17,13 +17,11 @@
         li{
             display: inline-block;
             a{
-                
                 text-decoration: none;
                 color: white;
                 padding: 10px 20px;
                 padding-bottom: 0px;
             }
-            
         }
     }
 }
@@ -48,7 +46,6 @@
     }
 }
 .header-link{
-    // display: inline-block;
     text-align: center;
     ul{
         padding-top: 20px;
@@ -68,19 +65,19 @@
 .home-1{
     width: 100%;
     height: 570px;
-    // background-color: rgb(250, 250, 255);
     background-image: url("../assets/see.png");
     background-size: 100% 100%;
-    // img{
-    //     width: 20px;
-    //     height: 20px;
-    // }
+
     h1{
         font-size: 4em;
         text-align: center;
         color: rgb(0, 0, 0);
         padding-top: 190px; 
         font-family: "Tiro Hindi";
+        animation-name: come_out;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+
     }
 }
 .home-2{
@@ -133,7 +130,6 @@
     img{
         width: 300px;
         height: 300px;
-        
     }
 }
 .home-3{
@@ -148,8 +144,6 @@
         padding-top: 110px;
         margin-bottom: 40px;
         font-size: 2.6em;
-        // text-decoration: underline;
-        // text-decoration-color: #D0FF77; 
         font-weight: 500;  
         span{
             color: red;
@@ -164,8 +158,7 @@
             color: #0024c4;
             font-size: 2em;
             text-decoration: underline;
-            text-decoration-color: #0024c4; 
-
+            text-decoration-color: #0024c4;
         }
     }
 }
@@ -291,20 +284,41 @@
         line-height: 1.5;
     }
 }
-// .about-why{
 
-// }
-// .home-3-img{
-//     img{
-//         width: 100%;
-//         height: 500px;
-//         // // animation-name: test;
-//         // // background-color: grayscale($color: #000000);
-//         // transform: grayscale;
-//     }
-  
-// }
-
+// ------------アニメーションーーーーーーーーーーーー 
+@keyframes come_out {
+    0%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.home_opacity{
+    opacity: 0.3;
+    transition: all 1s;
+}
+.home_come_out {
+    opacity: 1;
+}
+.home_fadein{
+    opacity: 0;
+	transform : translate(-200px, 0px);
+	transition : all 1s;
+}
+.home_fadein_sec{
+    opacity: 0;
+	transform : translate(-400px, 0px);
+	transition : all 1.3s;
+}
+.home_scrollin {
+	opacity : 1;
+	transform : translate(0, 0);
+}
+.home_scrollin_sec {
+	opacity : 1;
+	transform : translate(0, 0);
+}
 
 // ーーーーーーーーーレスポンシブ----------------
 @media screen and (max-width: 430px) {
@@ -323,7 +337,6 @@
           font-size: 13px;
           padding: 0 10px;
       }
-    
     
   }
     
@@ -366,17 +379,6 @@
     
     .home-2-img{
         display: none;
-        // top: unset;
-        // right: unset;
-        // display: unset;
-        // position: unset;
-        // text-align: center;
-        // display: block;
-        // img{
-        //     width: 200px;
-        //     height: 200px;
-        //     margin-top: -200px;
-        // }
     }
     .home-3{
         font-size: 10px;

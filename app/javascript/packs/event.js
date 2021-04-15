@@ -1,19 +1,12 @@
-
-
-
-
-
 window.addEventListener('scroll', () => {
-	let fadein = document.querySelectorAll(".fadein");
+	let fadein = document.querySelectorAll(".event_fadein");
 	fadein.forEach(el => {
 		let point = el.getBoundingClientRect().top;
 		if(550 > point){
-			el.classList.add('scrollin');
+			el.classList.add('event_scrollin');
 		}
 	});  
 });
-
-
 
 let ani = document.querySelectorAll(".ani");
 let rand1X;

@@ -2,7 +2,7 @@
 
 <div class="event-co">
  <% @posts.each do |post| %>
- <div class="posted fadein">
+ <div class="posted event_fadein">
   <ul>
     <% if post.img? %>
       <li class="posted-img"><%= image_tag post.img.url %></li>
@@ -36,7 +36,7 @@
 <%else%>
 <div class="event-co">
  <% @posts.each do |post| %>
- <div class="posted">
+ <div class="posted event_fadein">
   <ul>
      <% if post.img? %>
        <li class="posted-img"><%= image_tag post.img.url %></li>

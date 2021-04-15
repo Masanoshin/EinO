@@ -28,16 +28,16 @@
 .event-one{
     width: 10%;
 }
-.fadein{
+.event_fadein{
     opacity: 0;
 	transform : translate(-200px, 0px);
 	transition : all 1s;
 }
-.scrollin {
+.event_scrollin {
 	opacity : 1;
 	transform : translate(0, 0);
 }
-.fadein:first-child{
+.event_fadein:first-child{
     opacity: 1;
     transform : translate(0, 0);
 }
