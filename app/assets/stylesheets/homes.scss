@@ -45,10 +45,13 @@
         font-family: "Tiro Hindi";
     }
 }
+.menu{
+    display: none;
+}
 .header-link{
     text-align: center;
     ul{
-        padding-top: 20px;
+        padding-top: 10px;
         li{
             display: inline-block;
             padding: 0 20px;
@@ -60,6 +63,16 @@
             color: wheat;
           }
         }
+    }
+}
+.home-menu-icon{
+  text-align: center;
+  background-color: unset;
+  padding-top: 10px;
+  display: none;
+    img{
+      width: 20px;
+      height: 20px;
     }
 }
 .home-1{
@@ -325,19 +338,56 @@
 
 // --------------------ヘッダー--------------
   .header{
-      height: 70px;
+      height: 90px;
+      transition: all 0.6s;
+  }
+  .header-height.header{
+      height: 190px;
+      transition: all 1s;
   }
   .header-top img{
     height: 40px;
     width:  40px;
   }
 
-  .header-link{
-      ul li {
-          font-size: 13px;
-          padding: 0 10px;
+  .menu{
+      display: block;
+      text-align: center;
+      img{
+          height: 20px;
+          width: 20px;
+          padding-top: 9px;
       }
-    
+  }
+
+  .header-link{
+      display: none;
+      ul li {
+          opacity: 0;
+          display: block;
+          padding-top: 1px;
+      }
+  }
+  .header-link.header-link-comeout{
+      display: block;
+      ul li {
+        animation-name: test;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+  }
+  @keyframes test {
+      0%{
+          opacity: 0;
+      }
+      100%{
+          opacity: 1;
+      }
+      
+  }
+
+  .home-menu-icon{
+      display: block;
   }
     
   .home-1{
